@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="PerSon01" class="com.xiyou.java.Bean.Person">
+        <property name="lastName" value="wang"/>
+        <property name="age" value="12"/>
+        <property name="gender" value="Man"/>
+        <property name="email" value="3456789@qq.com"/>
+    </bean>
+
+    <bean id="person2" class="com.xiyou.java.Bean.Person">
+        <constructor-arg name="age" value="12"/>
+        <constructor-arg name="lastName" value="zhang"/>
+        <constructor-arg name="gender" value="男"/>
+        <constructor-arg name="email" value="test@12345.com"/>
+    </bean>
+
+</beans>
