@@ -19,5 +19,6 @@ public class Application {
 
         System.out.println(mp);
         System.out.println(ms);
+        mp.PrintMessage();
     }
 }
