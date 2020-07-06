@@ -17,7 +17,7 @@ public class TimeUtil {
         if (month == 1 | month == 2 || month == 3) {
             // 新一年的第一天仍然算上一年的最后一季度
             // 即 2020年1月1日实际上为2020 年的第一季度 ，但是由于这一天导出的数据是2019年12月31号
-            // 的数据该数据仍然需要存储在2020-4 文件夹中。因此需要特殊处理
+            // 的数据该数据仍然需要存储在2019-4 文件夹中。因此需要特殊处理
             if (month == 1 && now.get(Calendar.DATE) == 1) {
                 Integer ye = Integer.parseInt(year) - 1;
                 return ye + "-" + "4";
