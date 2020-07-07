@@ -43,7 +43,16 @@
 ```
 
 ### 显示装配（如第三方的库引入项目）
+
 #####  Java装配
-* `@Bean`的使用
-* `@Bean`对象的注入，
-#####  Xml装配
+* `@Bean` 创建`bean`实例并将其注册到spring应用的上下文中。产生这个bean对象的方法Spring 只会调用一次，随后spring 会将这个bean对象放在自己的IOC容器中。
+ ```
+ spring  容器管理一个或者多个bean, 这些bean都要在@Configuration注解下进行创建，在一个方法上使用@Bean表明 这个方法交给spring 进行管理。
+ 默认的情况下 spring 创建的对象是单例模式的。   
+```
+* 可以使用setter 方法注入；
+* `@Bean`对象的注入 
+
+自动装配处理歧义性
+
+##### XML装配

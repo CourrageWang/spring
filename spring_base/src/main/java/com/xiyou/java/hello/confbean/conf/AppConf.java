@@ -17,10 +17,11 @@ public class AppConf {
     }
 
     @Bean
-    public UserService userServiceNormal( UserDao userDao) {
+    public UserService userServiceNormal(UserDao userDao) {
         System.out.println("创建user无参构造方法！！");
 //        UserDao userDao = userDaoNormal();
-        return new UserServiceImpl(userDao);
+        UserServiceImpl userService = new UserServiceImpl();
+        userService.setUserDao(userDao);
+        return userService;
     }
-
 }

@@ -21,5 +21,4 @@ public class MessagePrinter {
     public void PrintMessage() {
         System.out.println(service.getMessage());
     }
-
 }

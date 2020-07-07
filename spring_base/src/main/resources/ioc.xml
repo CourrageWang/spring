@@ -17,4 +17,7 @@
         <constructor-arg name="email" value="test@12345.com"/>
     </bean>
 
+    <!--配置cdplayer-->
+    <bean class="com.xiyou.java.hello.basexml.CDPlayer" id="cdPlayer"/>
+
 </beans>
